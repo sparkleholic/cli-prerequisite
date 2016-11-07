@@ -50,13 +50,13 @@ func checkRequisites() bool {
 	fmt.Println(" - npm", NPM_VERSION)
 	fmt.Println(" - git", GIT_VERSION)
 	if checkVersion("node", "--version", NODE_VERSION) == false {
-		fmt.Printf("Please install node.js %s and above.\n", NODE_VERSION)
+		fmt.Printf("Please install node.js %s or above.\n", NODE_VERSION)
 		open.Start("https://nodejs.org/en/download/")
 		return false
 	}
 
 	if checkVersion("npm", "--version", NPM_VERSION) == false {
-		fmt.Printf("Please install npm %s and above.\n", NPM_VERSION)
+		fmt.Printf("Please install npm %s or above.\n", NPM_VERSION)
 		open.Start("https://nodejs.org/en/download/")
 		return false
 	}

@@ -42,7 +42,7 @@ func getVersion(word string) string {
 func checkRequisites() bool {
 	const (
 		NODE_VERSION, NPM_VERSION string = "4.0.0", "2.0.0"
-		GIT_VERSION               string = "2.0.0"
+		GIT_VERSION               string = "1.8.3"
 	)
 
 	fmt.Println("[Prerequisites for webOS CLI]")

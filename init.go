@@ -18,7 +18,7 @@ func checkVersion(exe string, arg string, minVersion string) bool {
 	cmd.Stdout = &out
 	err := cmd.Run()
 	if err != nil {
-		log.Fatal(err)
+		log.Print(err)
 		return false
 	}
 	version := getVersion(out.String())
@@ -83,10 +83,10 @@ func checkRequisites() bool {
 
 func main() {
 	if checkRequisites() == false {
-		fmt.Println("Need to install prerequisites.")
+		//fmt.Println("Need to install prerequisite.")
 		os.Exit(1)
 	} else {
-		fmt.Println("Passed checking all Prerequisites.")
+		fmt.Println("Passed checking Prerequisite.")
 		os.Exit(0)
 	}
 }
